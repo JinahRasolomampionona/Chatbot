@@ -1,0 +1,418 @@
+/* style.css - Reproduit fidèlement NovaWeb Digital */
+:root {
+    --nav-bg: #0f172a;
+    --primary-blue: #3b82f6;
+    --primary-purple: #4f46e5;
+    --accent-indigo: #4338ca;
+    --bg-page: #f1f5f9;
+    --card-bg: #ffffff;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-page);
+    color: var(--text-dark);
+    min-height: 100vh;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background-color: var(--nav-bg);
+    color: white;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-icon {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.logo-text h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-text span {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-primary-head {
+    background-color: var(--primary-purple);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* --- DISPOSITION PRINCIPALE --- */
+.main-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+/* --- HERO CARD & SERVICES --- */
+.hero-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 36px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.badge {
+    background-color: #e0e7ff;
+    color: #4338ca;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+.hero-card h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 16px 0;
+    color: #0f172a;
+    line-height: 1.25;
+}
+
+.hero-desc {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.service-box {
+    background-color: #f8fafc;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.service-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.wp-icon { background: #dbeafe; color: #1d4ed8; }
+.ecom-icon { background: #dcfce7; color: #15803d; }
+
+.service-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.service-box p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+/* --- BANNIÈRE CTA --- */
+.cta-banner {
+    background: linear-gradient(135deg, #2e1065, #3b0764);
+    color: white;
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-text h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.cta-text p {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.btn-cta-chat {
+    background-color: white;
+    color: #2e1065;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* --- SIDEBAR --- */
+.sidebar-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.check-list {
+    list-style: none;
+}
+
+.check-list li {
+    font-size: 14px;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check-mark {
+    color: #10b981;
+    font-weight: bold;
+}
+
+.info-card {
+    background-color: #f0f9ff;
+    border: 1px solid #bae6fd;
+}
+
+.info-card h3 {
+    color: #0369a1;
+}
+
+.info-card p {
+    font-size: 13px;
+    color: #0c4a6e;
+    line-height: 1.5;
+}
+
+/* --- CHATBOT FLOOTTANT & TIROIR --- */
+#chat-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+}
+
+#chat-container {
+    position: fixed;
+    bottom: 85px;
+    right: 24px;
+    width: 380px;
+    height: 520px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px -15px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+    border: 1px solid var(--border-color);
+}
+
+#chat-container.active { display: flex; }
+
+.chat-header {
+    background: #0f172a;
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h3 { font-size: 15px; font-weight: 700; }
+.status-online { font-size: 11px; color: #34d399; }
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 85%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 13.5px;
+    line-height: 1.45;
+}
+
+.message.bot { background: #e2e8f0; color: #0f172a; align-self: flex-start; }
+.message.user { background: #4f46e5; color: white; align-self: flex-end; }
+
+.faq-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.faq-chip {
+    background: white;
+    border: 1px solid #cbd5e1;
+    color: #4f46e5;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.chat-input-area {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    font-size: 13px;
+    outline: none;
+}
+
+.chat-input-area button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 16px;
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: var(--nav-bg);
+    color: rgb(148, 163, 184);;
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation et transition style Tailwind CSS */
+
+/* Keyframes inspirés de la classe Tailwind animate-bounce */
+@keyframes tailwindBounce {
+    0%, 100% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(-6px);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+/* Application du style Tailwind sur le bouton */
+#chat-toggle-btn {
+    /* Équivalent de : transition-all duration-300 ease-in-out */
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Animation de rebond léger automatique (style Tailwind) */
+    animation: tailwindBounce 2s infinite;
+}
+
+/* Équivalent de : hover:scale-105 hover:-translate-y-1 hover:shadow-xl */
+#chat-toggle-btn:hover {
+    transform: scale(1.05) translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(79, 70, 229, 0.4), 0 8px 10px -6px rgba(79, 70, 229, 0.3);
+    /* Met en pause le rebond automatique au survol pour plus de stabilité */
+    animation-play-state: paused;
+}
+
+/* Équivalent de : active:scale-95 */
+#chat-toggle-btn:active {
+    transform: scale(0.95) translateY(0);
+}
+
